@@ -1,0 +1,24 @@
+Enter an integer: 15
+1. Integer entered: 15
+Enter an integer: 18
+2. Integer entered: 18
+
+Enter a double: 19.76
+1. Double entered: 19.760000
+Enter a double: 19.75
+2. Double entered: 19.750000
+Enter a double: 18.349
+3. Double entered: 18.349000
+
+Enter a string: hello
+1. String entered: hello
+Enter a string: goodbye
+2. String entered: goodbye
+Enter a string: computers
+3. String entered: computers
+Enter a string: system
+4. String entered: system
+
+Max integer entered: 18
+Max double entered: 19.760000
+Longest string entered: computers

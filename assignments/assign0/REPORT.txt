@@ -1,0 +1,11 @@
+1. I did not collaborate with anybody.
+
+2. I believe both of my programs are correct as I tested them several times
+using scan-build and valgrind.
+
+3. My programs are working perfectly.
+
+4. The only challenge was a newline character being stored in the stdin buffer that was
+messing up my driver1 program, but I solved it by checking, before my while loop,
+one time for the newline character. Assignment was a decent first assignment for
+this course.
