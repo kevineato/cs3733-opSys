@@ -1,10 +1,10 @@
 all: assign1-0
 
 assign1-0: assign1-0.c pslibrary.c
-	cc -o assign1-0 assign1-0.c pslibrary.c
+	gcc -std=c99 -o assign1-0 assign1-0.c pslibrary.c
 
 assign1: assign1.c pslibrary.c
-	cc -o assign1 assign1.c pslibrary.c
+	gcc -std=c99 -o assign1 assign1.c pslibrary.c
 
 clean:
 	rm -f assign1-0 assign1 *.o

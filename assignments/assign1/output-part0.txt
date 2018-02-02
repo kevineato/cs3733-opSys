@@ -1,0 +1,7 @@
+Assignment 1 program was written by Kevin Wilson
+inputs: 0 2 4 6 7 8 9 
+
+Part 0
+RRwwwwwRRRRRRRRR
+rrRRRRwwwwwwwwrrRRRRRRR
+0 4 2.0 0.95652
