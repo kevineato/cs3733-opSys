@@ -27,12 +27,12 @@ int main(int argc, char *argv[]) {
   int z2 = atoi(argv[7]);
   int total = x1 + y1 + z1 + x2 + y2 + z2;
 
-  char *heading = "Part 0\n";
+  char *heading = "Part 1\n";
   /* allocate total of last 6 args for s1 and s2 */
   char *s1 = (char *)malloc(total);
   char *s2 = (char *)malloc(total);
 
-  part0(s1, s2);
+  fcfsa(s1, s2, x1, y1, z1, x2, y2, z2);
   display(heading, s1, s2);
 
   /* free allocated s1 and s2 */

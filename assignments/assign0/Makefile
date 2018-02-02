@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -I. -O0 -ggdb3 -std=c99 -pedantic -Wall -Werror -Wextra
+CFLAGS = -O0 -ggdb3 -std=c99 -pedantic -Wall -Werror -Wextra
 OBJDIR = obj
 OBJ1 = $(OBJDIR)/driver1.o
 OBJ2 = $(OBJDIR)/driver2.o
