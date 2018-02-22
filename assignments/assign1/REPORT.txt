@@ -1,0 +1,22 @@
+1. I did not collaborate with anybody.
+
+2. I believe both of my programs are correct as I tested them several times
+using scan-build and valgrind.
+
+3. My programs are working perfectly.
+
+4. I would suggest making this a little more relevant to scheduling by using
+structs to represent the processes instead of strings, because with structs you
+can implement the rules for the fcfs algorithm closer to how it really is, while
+with strings we are simply implementing rules based on letters instead of whether
+a process is running or waiting.
+
+5.
+ls -l fcfsa.all:
+-rw-r--r-- 1 kevineato kevineato 44958317 Feb  1 20:36 fcfsa.all
+
+wc fcfsa.all:
+ 2000001  2000003 44958317 fcfsa.all
+
+md5sum fcfsa.all
+9598ee40ed99469d078ac5fb4aa87749  fcfsa.all
