@@ -90,20 +90,39 @@ void fcfsa(char *s1, char *s2, int x1, int y1, int z1, int x2, int y2, int z2) {
         y2--;
       }
 
-      /* p1 finishes while p2 waits */
-      while (z1 > 0) {
-        s1[curr1++] = 'R';
-        z1--;
-      }
+      if (curr2 < curr1) {
+        /* p2 finishes  while p1 waits */
+        while (z2 > 0) {
+          s2[curr2++] = 'R';
+          z2--;
+        }
 
-      /* if p2 current position < p1 pad with 'r' */
-      while (curr2 < curr1)
-        s2[curr2++] = 'r';
+        /* if p1 current position < p2 pad with 'r' */
+        while (curr1 < curr2)
+          s1[curr1++] = 'r';
 
-      /* p2 finishes */
-      while (z2 > 0) {
-        s2[curr2++] = 'R';
-        z2--;
+        /* p2 finishes */
+        while (z1 > 0) {
+          s1[curr1++] = 'R';
+          z1--;
+        }
+      } else {
+
+        /* p1 finishes while p2 waits */
+        while (z1 > 0) {
+          s1[curr1++] = 'R';
+          z1--;
+        }
+
+        /* if p2 current position < p1 pad with 'r' */
+        while (curr2 < curr1)
+          s2[curr2++] = 'r';
+
+        /* p2 finishes */
+        while (z2 > 0) {
+          s2[curr2++] = 'R';
+          z2--;
+        }
       }
       /* p2 doesn't wait */
     } else {
