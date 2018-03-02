@@ -90,6 +90,7 @@ void fcfsa(char *s1, char *s2, int x1, int y1, int z1, int x2, int y2, int z2) {
         y2--;
       }
 
+      /* p2 done waiting before p1 */
       if (curr2 < curr1) {
         /* p2 finishes  while p1 waits */
         while (z2 > 0) {
@@ -106,6 +107,7 @@ void fcfsa(char *s1, char *s2, int x1, int y1, int z1, int x2, int y2, int z2) {
           s1[curr1++] = 'R';
           z1--;
         }
+      /* p1 done waiting before/same time as p2 */
       } else {
 
         /* p1 finishes while p2 waits */
@@ -124,7 +126,7 @@ void fcfsa(char *s1, char *s2, int x1, int y1, int z1, int x2, int y2, int z2) {
           z2--;
         }
       }
-      /* p2 doesn't wait */
+    /* p2 doesn't wait */
     } else {
       /* p1 ready while p2 finishes */
       while (z2 > 0) {
