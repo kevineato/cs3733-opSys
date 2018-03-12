@@ -1,0 +1,31 @@
+1. I did not collaborate with anybody.
+
+2. I believe all of my programs are correct as I tested them several times
+using scan-build and valgrind. They also produced output that perfectly matched
+the instructor's.
+
+3. My programs are working perfectly.
+
+4. Assignment was not very challenging, partially because of the prototype
+function that was provided. My only suggestion for making it more interesting
+is to get rid of the prototype.
+
+5.
+ls -l *.all:
+-rw-r--r-- 1 kevineato kevineato 44344517 Mar  2 23:47 fcfs.all
+-rw-r--r-- 1 kevineato kevineato 42267266 Mar  2 23:47 psjf.all
+-rw-r--r-- 1 kevineato kevineato 46409196 Mar  2 23:47 rr.all
+-rw-r--r-- 1 kevineato kevineato 43243801 Mar  2 23:47 sjf.all
+
+wc *.all:
+  2000001   2000003  44344517 fcfs.all
+  2000001   2000003  42267266 psjf.all
+  2000001   2000003  46409196 rr.all
+  2000001   2000003  43243801 sjf.all
+  8000004   8000012 176264780 total
+
+md5sum *.all:
+ca6f6876a9d3049247ebc1146cf9be8d  fcfs.all
+385126a67b78e5c4c8b1351961de0da6  psjf.all
+0d9f1d3a30869d4e5b64f521f9ac7910  rr.all
+23f74dc6923b9601d2d54bbe0287278b  sjf.all
