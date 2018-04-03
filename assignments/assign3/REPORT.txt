@@ -1,0 +1,46 @@
+Kevin Wilson (syx009)
+
+NOTE: I have implemented part 3 for extra credit.
+
+1. I did not collaborate with anybody.
+
+2. I believe all of my programs are correct as I tested them several times
+using scan-build and valgrind. They also produced output that perfectly matched
+the instructor's.
+
+3. My programs are working perfectly.
+
+4. This was a fun assignment and it was interesting to see how memory is
+mapped in OS. The hardest part was keeping track of the pages and physical
+frames and keeping them in sync while also maintaining the least recently
+used page/frame. I think this assignment was the perfect amount of difficult and
+very interesting.
+
+5.
+PART 1 Output
+md5sum output-part1:
+ceabc02825a5b908e474b053074ab53c  output-part1
+
+PART 2 Output
+md5sum output-part2:
+c95b27848ae8d4354d87678d075001f7  output-part2
+Number of page faults: 3210
+
+PART 3 Output
+md5sum output-part3 for ./assign3 256 4096 1024 part2sequence:
+d34ec1b7d6aaa8d6eb093b9b95c8e094  output-part3
+Number of page faults: 3324
+
+md5sum output-part3 for ./assign3 128 4096 2048 part2sequence:
+eae769fd560d5e7940b9e0e5f593e7f8  output-part3
+Number of page faults: 2132
+
+I believe my part 3 implementation is correct because it produced the correct
+output for several tests and implements the same ideas as the theory of
+memory mapping dictates. My page and frame tables map to each other in sync
+and are updated correctly using a least recently used policy. It is very
+similar to my part 2 but it accepts arguments instead of using macros to
+assign the sizes to the tables and pages, so my implementations of the tables
+are abstract and adaptable to different sizes since I did not have to change
+the implementation at all for variable page and table sizes between part 2 and
+part 3.
